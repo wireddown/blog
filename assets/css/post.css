@@ -1,0 +1,134 @@
+/* Header */
+
+header {
+  font-size: 1.4rem;
+  margin: 2rem 0 4rem 0;
+  padding: 0rem 0.5rem;
+  background-color: var(--title);
+}
+header a {
+  color: var(--page-bg);
+}
+
+/* Bio section */
+
+/* Article contents */
+
+.article {
+  margin-bottom: 3rem;
+}
+.article-header {
+  margin-bottom: 4rem;
+}
+.article-title {
+  font-size: 2.4rem;
+  margin-bottom: 0.6rem;
+  line-height: 140%;
+  color: var(--title);
+}
+
+/* Markdown content */
+
+.content * {
+  line-height: 160%;
+}
+.content p {
+  margin: 0 0 1.75rem 0;
+  padding: 0;
+}
+.content h1 {
+  font-size: 2rem;
+  color: var(--debug); /* Stands out because '#' headings not allowed in posts */
+}
+.content h2 {
+  font-size: 1.8rem;
+  color: var(--subtitle);
+}
+.content h3 {
+  font-size: 1.6rem;
+}
+.content h4 {
+  font-size: 1.4rem;
+}
+.content h5 {
+  font-size: 1.2rem;
+}
+.content h6 {
+  font-size: 1rem;
+}
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+  margin: 1.75rem 0;
+}
+.content blockquote {
+  padding-left: 1.42188rem;
+  margin-bottom: 1.75rem;
+  font-weight: 300;
+  font-style: italic;
+  border-left: 0.3rem solid var(--line-color);
+}
+.content strong {
+  font-weight: bold;
+}
+.content ul {
+  margin-left: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+.content ol {
+  margin-left: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+.content ol * ol,
+.content ul * ul {
+  margin-left: 1rem;
+  margin-bottom: 0;
+}
+.content table {
+  min-width: 50%;
+  max-width: 100%;
+  margin: 1rem 0;
+  border-collapse: collapse;
+}
+.content table th {
+  background-color: var(--line-color);
+  color: var(--page-text);
+  border: 1px solid var(--page-bg);
+  padding: 0.3rem 1.5rem;
+}
+.content table tr td {
+  border: 1px solid var(--line-color);
+  padding: 0.3rem 1.5rem;
+}
+.content a,
+.content a strong {
+  color: var(--title);
+  border-bottom: 1px solid var(--title);
+}
+.content img {
+  max-width: 100%;
+  margin: 1rem 0;
+}
+.content img.emoji {
+  margin: 0 !important;
+}
+
+/* Monospaced pre , code */
+
+.content,
+.content div,
+.content div pre,
+.content div pre code {
+  overflow-x: auto !important;
+}
+
+/* Viewport size adjustments */
+
+@media screen and (max-width: 1050px) {
+  body {
+    padding: 1.5rem;
+  }
+}

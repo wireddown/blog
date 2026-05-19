@@ -1,0 +1,16 @@
+name: Joe Friedrichsen
+avi:
+  url: assets/gallery/wireddown-accent-2.png
+description: |
+  <p>Application development with <strong>LabVIEW</strong> and <strong>Python</strong></p>
+  <br />
+  <p>Hardware design with <strong>KiCad</strong> and <strong>VirtualBench</strong></p>
+contact:
+  - title: home
+    url: https://downtothewire.io
+  - title: github
+    url: https://github.com/wireddown
+  - title: linkedin
+    url: https://www.linkedin.com/in/joefriedchicken/
+  - title: email
+    url: mailto:all.wired.down@gmail.com

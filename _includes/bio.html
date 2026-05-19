@@ -1,0 +1,15 @@
+<section id="bio">
+  <section id="img-wrapper">
+    <a href="{{site.url}}"><img src="{{site.data.author.avi.url}}" alt="Author avatar" /></a>
+  </section>
+  <section id="bio-wrapper">
+    <div id="text-wrapper">{{site.data.author.description}}</div>
+    <div id="social-wrapper">
+      {% for entry in site.data.author.contact %}
+      <a href="{{entry.url}}" target="_blank">
+        <img src="{{site.baseurl}}/assets/icons/{{entry.title}}.png" alt="{{entry.title}} icon" />
+      </a>
+      {%endfor%}
+    </div>
+  </section>
+</section>

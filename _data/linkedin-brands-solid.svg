@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 449.12281 449.12281"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="linkedin-brands-solid.svg"
+   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
+   inkscape:export-filename="..\assets\icons\linkedin.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   width="512"
+   height="512"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.57"
+     inkscape:cx="255.09554"
+     inkscape:cy="251.91083"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Layer 1"
+     style="display:inline">
+    <path
+       id="path3"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:13.8206;stroke-linecap:round;stroke-linejoin:round"
+       d="M 224.56141 1.9051535 A 222.65669 222.65669 0 0 0 1.9051535 224.56141 A 222.65669 222.65669 0 0 0 224.56141 447.21766 A 222.65669 222.65669 0 0 0 447.21766 224.56141 A 222.65669 222.65669 0 0 0 224.56141 1.9051535 z M 128.09588 88.536527 C 136.67462 88.536527 144.01938 91.589968 150.1285 97.699082 C 156.23761 103.8082 159.29105 111.08761 159.29105 119.53639 C 159.29105 128.11514 156.23761 135.45989 150.1285 141.56901 C 144.01938 147.67812 136.67462 150.73157 128.09588 150.73157 C 119.51712 150.73157 112.17409 147.67812 106.06497 141.56901 C 99.955857 135.45989 96.9007 128.11514 96.9007 119.53639 C 96.9007 111.08761 99.955857 103.8082 106.06497 97.699082 C 112.17409 91.589968 119.51712 88.536527 128.09588 88.536527 z M 291.53646 177.59217 C 307.44437 177.59217 320.57102 184.12422 330.91763 197.18682 C 341.39357 210.2494 346.63172 226.93299 346.63172 247.23821 L 346.63172 348.50603 L 296.19312 348.50603 L 296.19312 255.19292 C 296.19312 245.62231 293.54107 237.53757 288.23842 230.94161 C 283.06513 224.34565 276.72758 221.04921 269.22629 221.04921 C 260.173 221.04921 252.73608 225.25224 246.91612 233.65886 C 241.09615 241.93614 238.18702 252.6695 238.18702 265.86143 L 238.18702 348.50603 L 188.52282 348.50603 L 188.52282 181.66633 L 238.18702 181.66633 L 238.18702 201.45457 C 255.1296 185.54666 272.91257 177.59217 291.53646 177.59217 z M 103.33402 181.53783 L 153.24836 181.53783 L 153.24836 349.21361 L 103.33402 349.21361 L 103.33402 181.53783 z " />
+  </g>
+</svg>

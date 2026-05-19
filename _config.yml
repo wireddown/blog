@@ -1,0 +1,34 @@
+# Setup
+title:               Down to the Wire
+url:                 https://downtothewire.io
+baseurl:             /blog
+
+# Contents
+exclude:             [CNAME, Gemfile, Gemfile.lock, README.md, LICENSE]
+unpublished:         true
+show_drafts:         false
+
+# Custom data
+established:         2014
+license:             CC BY 4.0
+license_url:         https://creativecommons.org/licenses/by/4.0/legalcode
+
+# Plugins
+plugins:
+  - jemoji
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Pages
+collections_dir: all_collections
+collections:
+  posts:
+    output: true
+
+defaults:
+  - scope:
+      path: "_posts"
+    values:
+      layout: "post"
+      permalink: /posts/:title/
