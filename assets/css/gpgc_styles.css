@@ -1,0 +1,260 @@
+/*
+ * Comments for GitHub Pages via Liquid/Jekyll
+ *
+ * Copyright 2015 Joe Friedrichsen
+ * Released under the MIT license.
+ *
+ * Learn more at https://github.com/wireddown/ghpages-ghcomments
+ */
+
+/*
+ * Color theme
+ *
+ */
+
+.gpgc-normal-primary-button,
+.gpgc-tab {
+  background-color: var(--line-color);
+  color: var(--title);
+  border: solid 1px var(--title);
+  font-weight: 600;
+}
+
+.gpgc-tab:hover {
+  background-color: hsl(from var(--line-color) h s 45);
+}
+
+.gpgc-tab.selected {
+  background-color: var(--title);
+  color: var(--page-bg);
+}
+
+#gpgc_new_comment .gpgc-avatar {
+  /* filters from https://codepen.io/sosuke/pen/Pjoqqp */
+  filter: invert(91%) sepia(70%) saturate(6689%) hue-rotate(322deg) brightness(101%) contrast(104%);
+}
+
+.gpgc-new-comment-form-textarea {
+  background-color: var(--cat-bg);
+  border: solid 1px var(--line-color);
+  font-weight: 400;
+}
+
+#login_button {
+  border: solid 1px var(--title);
+}
+
+#login_button:hover {
+  background-color: hsl(from var(--line-color) h s 45);
+}
+
+.gpgc-comment {
+  background-color: var(--card-bg);
+}
+
+.gpgc-comment-header {
+  background-color: var(--line-color);
+}
+
+.gpgc-comment table th {
+  border: 1px solid var(--card-bg);
+}
+
+.gpgc-comment blockquote {
+  padding-left: .6rem;
+  margin-top: .6rem;
+  margin-bottom: .6rem;
+}
+
+.gpgc-comment p,
+.gpgc-help-error p {
+  margin: 0 0 .6rem 0;
+}
+
+.gpgc-large-secondary-button {
+  background-color: var(--card-bg);
+  color: var(--cat-bg);
+  border: solid 2px var(--line-color);
+}
+
+.gpgc-large-secondary-button:hover {
+  background-color: var(--line-color);
+}
+
+button:disabled {
+  border: solid 1px red !important;
+  background-color: red !important;
+}
+
+/*
+ * Mix-ins
+ *
+ */
+
+.gpgc-hidden {
+  display: none !important;
+}
+
+.gpgc-centered-text {
+  text-align: center;
+}
+
+.gpgc-comments-font {
+  font-size: .9rem;
+  line-height: 1.4rem;
+}
+
+.gpgc-new-section {
+  margin-top: 3rem !important;
+}
+
+.gpgc-text-button {
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  padding-top: .4rem;
+  padding-bottom: .4rem;
+  cursor: pointer;
+}
+
+/*
+ * Wider display overrides
+ *
+ */
+
+@media (min-width: 410px) {
+  .gpgc-normal-primary-button {
+    float: right;
+    display: inline;
+  }
+
+  .gpgc-tabs {
+    float: right;
+    padding-left: 0px;
+  }
+
+  .gpgc-new-comment-actions {
+    padding: 0rem 1rem 3.2rem 1rem !important;
+  }
+}
+
+/*
+ * Classes
+ *
+ */
+
+.gpgc-actions  {
+  overflow: hidden; /* clearfix */
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.gpgc-action {
+  display: block;
+  padding: 1rem;
+}
+
+.gpgc-large-secondary-button {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 14rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.gpgc_last_div {
+  padding-top: 4rem;
+}
+
+/*
+ * Comment classes
+ *
+ */
+
+.gpgc-comment {
+  margin-top: 1.6rem;
+          border-radius: 0px 0px 24px 24px;
+  -webkit-border-radius: 0px 0px 24px 24px;
+}
+
+.gpgc-comment-header {
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-bottom: .4rem;
+}
+
+.gpgc-avatar {
+  display: inline;
+  margin-bottom: 0px;
+  margin-right: .6rem;
+  vertical-align: baseline;
+  border-radius: 50%;
+}
+
+.gpgc-comment-contents {
+  padding: .6rem 2rem 1.5rem 2rem;
+}
+
+.gpgc-comment-contents h1,
+.gpgc-comment-contents h2,
+.gpgc-comment-contents h3,
+.gpgc-comment-contents h4,
+.gpgc-comment-contents h5,
+.gpgc-comment-contents h6 {
+  margin: .6rem 0;
+}
+
+/*
+ * New comment form classes
+ *
+ */
+
+.gpgc-new-comment {
+  min-height: 4rem;
+  padding-top: 0.8rem;
+}
+
+.gpgc-new-comment-form {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.gpgc-tabs {
+  margin-top: .4rem;
+  padding-left: 5px;
+}
+
+.gpgc-tab {
+  margin-left: -5px;
+}
+
+.gpgc-tab.selected {
+  cursor: auto;
+}
+
+.gpgc-new-comment-form-textarea {
+  display: block;
+  width: stretch;
+  min-height: 8rem;
+  padding: .4rem;
+  resize: vertical;
+}
+
+.gpgc-new-comment-actions {
+  padding: 0.4rem 0.4rem 1rem;
+}
+
+button:disabled {
+  cursor: auto !important;
+}
+
+.gpgc-comment-help {
+  padding: 1rem 1rem 0rem 1rem;
+}
+
+.gpgc-help-error {
+  padding: 1rem;
+  margin: 1rem;
+  border: solid 2px var(--oc-red-7);
+  background-color: var(--card-bg);
+}

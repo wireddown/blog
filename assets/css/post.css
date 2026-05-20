@@ -2,12 +2,16 @@
 
 header {
   font-size: 1.4rem;
-  margin: 2rem 0 4rem 0;
+  margin: 2rem 0 2.5rem 0;
   padding: 0rem 0.5rem;
   background-color: var(--title);
 }
 header a {
   color: var(--page-bg);
+}
+.categories {
+  padding-bottom: 1rem;
+  border-bottom: solid 2px var(--title);
 }
 
 /* Bio section */
@@ -18,7 +22,7 @@ header a {
   margin-bottom: 3rem;
 }
 .article-header {
-  margin-bottom: 4rem;
+  margin-bottom: 1.5rem;
 }
 .article-title {
   font-size: 2.4rem;
@@ -30,7 +34,7 @@ header a {
 /* Markdown content */
 
 .content * {
-  line-height: 160%;
+  line-height: 170%;
 }
 .content p {
   margin: 0 0 1.75rem 0;
@@ -38,7 +42,7 @@ header a {
 }
 .content h1 {
   font-size: 2rem;
-  color: var(--debug); /* Stands out because '#' headings not allowed in posts */
+  color: var(--oc-grape-5); /* Stands out because '#' headings not allowed in posts */
 }
 .content h2 {
   font-size: 1.8rem;
@@ -68,44 +72,8 @@ header a {
   padding-left: 1.42188rem;
   margin-bottom: 1.75rem;
   font-weight: 300;
-  font-style: italic;
-  border-left: 0.3rem solid var(--line-color);
 }
-.content strong {
-  font-weight: bold;
-}
-.content ul {
-  margin-left: 1.75rem;
-  margin-bottom: 1.75rem;
-}
-.content ol {
-  margin-left: 1.75rem;
-  margin-bottom: 1.75rem;
-}
-.content ol * ol,
-.content ul * ul {
-  margin-left: 1rem;
-  margin-bottom: 0;
-}
-.content table {
-  min-width: 50%;
-  max-width: 100%;
-  margin: 1rem 0;
-  border-collapse: collapse;
-}
-.content table th {
-  background-color: var(--line-color);
-  color: var(--page-text);
-  border: 1px solid var(--page-bg);
-  padding: 0.3rem 1.5rem;
-}
-.content table tr td {
-  border: 1px solid var(--line-color);
-  padding: 0.3rem 1.5rem;
-}
-.content a,
-.content a strong {
-  color: var(--title);
+.content a {
   border-bottom: 1px solid var(--title);
 }
 .content img {
@@ -114,15 +82,6 @@ header a {
 }
 .content img.emoji {
   margin: 0 !important;
-}
-
-/* Monospaced pre , code */
-
-.content,
-.content div,
-.content div pre,
-.content div pre code {
-  overflow-x: auto !important;
 }
 
 /* Viewport size adjustments */

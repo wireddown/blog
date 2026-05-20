@@ -2,7 +2,9 @@
 
 header {
   font-size: 4rem;
-  margin: 1rem 0 4rem 0;
+  margin: 1rem 0 3rem 0;
+  padding-bottom: 1rem;
+  border-bottom: solid 3px var(--title);
 }
 .site-title {
   font-weight: bolder;
@@ -17,6 +19,12 @@ header {
 #img-wrapper img {
   border-radius: 50%;
   max-width: 100px;
+  transition: all 0.2s ease-in-out;
+  overflow-x: visible;
+  overflow-y: visible;
+}
+#img-wrapper img:hover {
+  transform: scale(1.2);
 }
 #bio-wrapper {
   margin-left: 1.5rem;
@@ -26,16 +34,17 @@ header {
   font-weight: 400;
 }
 #text-wrapper a {
-  color: var(--title);
   border-bottom: 1px solid var(--title);
 }
 #social-wrapper {
   margin-top: 1.1rem;
+  overflow-x: visible !important;
+  overflow-y: visible !important;
 }
 #social-wrapper img {
-  /*filters from https://codepen.io/sosuke/pen/Pjoqqp */
-  /* filter: invert(93%) sepia(8%) saturate(79%) hue-rotate(170deg) brightness(102%) contrast(91%) !important; */
-  filter: invert(88%) sepia(87%) saturate(346%) hue-rotate(322deg) brightness(103%) contrast(101%) !important;
+  /* filters from https://codepen.io/sosuke/pen/Pjoqqp */
+  /* filter: invert(93%) sepia(8%) saturate(79%) hue-rotate(170deg) brightness(102%) contrast(91%); */
+  filter: invert(88%) sepia(87%) saturate(346%) hue-rotate(322deg) brightness(103%) contrast(101%);
   width: 25px;
   height: 25px;
   margin: 0 0.2rem 0.3rem 0;
@@ -60,7 +69,6 @@ header {
 }
 .articles .article .article-title,
 .articles .article .article-title a {
-  color: var(--title);
   font-weight: 300;
   font-size: 1.5rem;
   line-height: 130%;
