@@ -18,27 +18,27 @@ var CommentsArray = [];
 var StateChallenge = "";
 var WriteMode = "write", PreviewMode = "preview";
 
-var AllCommentsDiv = document.getElementById("gpgc_all_comments");
-var NoCommentsDiv = document.getElementById("gpgc_no_comments");
-var ActionsDiv = document.getElementById("gpgc_actions");
-var ShowCommentsButton = document.getElementById("show_comments_button");
+var AllCommentsDiv = document.getElementById("gpgc-all-comments");
+var NoCommentsDiv = document.getElementById("gpgc-no-comments");
+var ActionsDiv = document.getElementById("gpgc-actions");
+var ShowCommentsButton = document.getElementById("show-comments-button");
 
-var DisabledCommentsDiv = document.getElementById("gpgc_disabled");
-var NewCommentDiv = document.getElementById("gpgc_new_comment");
-var WriteButton = document.getElementById("write_button");
-var WriteDiv = document.getElementById("write_div");
-var CommentMarkdown = document.getElementById("new_comment_field");
-var PreviewButton = document.getElementById("preview_button");
-var PreviewDiv = document.getElementById("preview_div");
+var DisabledCommentsDiv = document.getElementById("gpgc-disabled");
+var NewCommentDiv = document.getElementById("gpgc-new-comment");
+var WriteButton = document.getElementById("write-button");
+var WriteDiv = document.getElementById("write-div");
+var CommentMarkdown = document.getElementById("new-comment-field");
+var PreviewButton = document.getElementById("preview-button");
+var PreviewDiv = document.getElementById("preview-div");
 
-var ReaderGitHubUrl = document.getElementById("gpgc_reader_url");
-var ReaderAvatarUrl = document.getElementById("gpgc_reader_avatar");
-var ReaderLogin = document.getElementById("gpgc_reader_login");
-var LoginButton = document.getElementById("login_button");
-var SubmitButton = document.getElementById("submit_button");
+var ReaderGitHubUrl = document.getElementById("gpgc-reader-url");
+var ReaderAvatarUrl = document.getElementById("gpgc-reader-avatar");
+var ReaderLogin = document.getElementById("gpgc-reader-login");
+var LoginButton = document.getElementById("login-button");
+var SubmitButton = document.getElementById("submit-button");
 
-var HelpMessageDiv = document.getElementById("help_message");
-var ErrorDiv = document.getElementById("gpgc_reader_error");
+var HelpMessageDiv = document.getElementById("help-message");
+var ErrorDiv = document.getElementById("gpgc-reader-error");
 
 /* main */
 
@@ -671,7 +671,7 @@ function verifyCss() {
   var foundCssInHead = false;
   var fetchedCss = false;
   for (var i = 0; i < css.length; i++) {
-    if (css[i].href.match("gpgc_styles.css")) {
+    if (css[i].href.match("gpgc-styles.css")) {
       foundCssInHead = true;
       if (css[i].cssRules.length > 0) {
         fetchedCss = true;
@@ -682,12 +682,12 @@ function verifyCss() {
 
   var missingCssMessage = "";
   if (! foundCssInHead) {
-    missingCssMessage = "<h3><strong>gpgc</strong> Error: Missing CSS</h3><p><code>gpgc_styles.css</code> is not in the &lt;head&gt; element.</p><p>Add a <code>&lt;link&gt;</code> element to <code>_includes/head.hml</code>.</p>";
+    missingCssMessage = "<h3><strong>gpgc</strong> Error: Missing CSS</h3><p><code>gpgc-styles.css</code> is not in the &lt;head&gt; element.</p><p>Add a <code>&lt;link&gt;</code> element to <code>_includes/head.hml</code>.</p>";
   }
 
   var css404Message = "";
   if (! fetchedCss && foundCssInHead) {
-    css404Message = "<h3><strong>gpgc</strong> Error: CSS 404</h3><p>Could not retrieve <code>gpgc_styles.css</code> from your site.</p><p>Check <code>_includes/head.hml</code> for typos.</p>";
+    css404Message = "<h3><strong>gpgc</strong> Error: CSS 404</h3><p>Could not retrieve <code>gpgc-styles.css</code> from your site.</p><p>Check <code>_includes/head.hml</code> for typos.</p>";
   }
 
   var allMessagesHtml = missingCssMessage + css404Message;

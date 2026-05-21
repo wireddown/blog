@@ -1,3 +1,6 @@
 <footer>
-  <p>&copy; {{site.established}} - {{ 'now' | date: "%Y" }} | <a href="{{site.url}}">{{site.data.author.name}}</a></p>
+  <div style="display: flex; justify-content: space-between;">
+  <span style="text-align: left;"><p>&copy; {{site.established}} - {{ 'now' | date: "%Y" }} | <a href="{{site.url}}">{{site.data.author.name}}</a></p></span>
+  <span style="text-align: right;"><p><a href="{{ site.baseurl }}/contents/">Site contents</a></p></span>
+</div>
 </footer>

@@ -29,7 +29,7 @@
   color: var(--page-bg);
 }
 
-#gpgc_new_comment .gpgc-avatar {
+#gpgc-new-comment .gpgc-avatar {
   /* filters from https://codepen.io/sosuke/pen/Pjoqqp */
   filter: invert(91%) sepia(70%) saturate(6689%) hue-rotate(322deg) brightness(101%) contrast(104%);
 }
@@ -40,11 +40,11 @@
   font-weight: 400;
 }
 
-#login_button {
+#login-button {
   border: solid 1px var(--title);
 }
 
-#login_button:hover {
+#login-button:hover {
   background-color: hsl(from var(--line-color) h s 45);
 }
 
@@ -161,7 +161,7 @@ button:disabled {
   cursor: pointer;
 }
 
-.gpgc_last_div {
+.gpgc-last-div {
   padding-top: 4rem;
 }
 

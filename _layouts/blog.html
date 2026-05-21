@@ -11,10 +11,10 @@
             <a href="{{site.baseurl}}{{post.url}}"> {{post.title}} </a>
           </h2>
           <small class="date">{{post.date | date_to_string}}</small>
-          <div class="categories">
-            {% for c in post.categories %}
-            <a href="#!" data-base-url="{{site.baseurl}}" class="category"
-              >{{c}}</a
+          <div class="tags">
+            {% for c in post.tags %}
+            <a href="#!" data-base-url="{{site.baseurl}}" class="tag"
+              >{{c | downcase}}</a
             >
             {% endfor %}
           </div>
@@ -23,6 +23,6 @@
       </section>
       {% include footer.html %}
     </main>
-    {% include category-modal.html%}
+    {% include tag-modal.html%}
   </body>
 </html>

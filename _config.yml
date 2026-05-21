@@ -2,6 +2,7 @@
 title:               Down to the Wire
 url:                 https://downtothewire.io
 baseurl:             /blog
+permalink:           pretty
 
 # Contents
 exclude:             [CNAME, Gemfile, Gemfile.lock, README.md, LICENSE]

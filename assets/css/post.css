@@ -9,7 +9,7 @@ header {
 header a {
   color: var(--page-bg);
 }
-.categories {
+.tags {
   padding-bottom: 1rem;
   border-bottom: solid 2px var(--title);
 }
