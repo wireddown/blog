@@ -7,7 +7,8 @@ permalink:           pretty
 # Contents
 exclude:             [CNAME, Gemfile, Gemfile.lock, README.md, LICENSE]
 unpublished:         true
-show_drafts:         false
+show_drafts:         true
+livereload:          true
 
 # Custom data
 established:         2014
@@ -21,6 +22,9 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
 
+kramdown:
+  smart_quotes:  ["apos", "apos", "quot", "quot"]
+
 # Pages
 collections_dir: all_collections
 collections:
@@ -30,6 +34,11 @@ collections:
 defaults:
   - scope:
       path: "_posts"
+    values:
+      layout: "post"
+      permalink: /posts/:title/
+  - scope:
+      path: "_drafts"
     values:
       layout: "post"
       permalink: /posts/:title/
