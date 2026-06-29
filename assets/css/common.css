@@ -129,6 +129,7 @@ div,
 div pre,
 div pre code {
   overflow-x: auto !important;
+  scrollbar-color: var(--line-color) var(--page-bg);
 }
 
 /* Page regions */
