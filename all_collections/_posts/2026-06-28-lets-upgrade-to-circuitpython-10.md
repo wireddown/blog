@@ -349,7 +349,7 @@ Now I am finally ready to test that mode, and I can use a built-in GUI applicati
 I agree, Scanner: ✅ _"Communication successful."_
 I'm glad there has only been one surprise so far.
 
-### Analog plotter
+## Analog plotter
 
 It _seems_ like everything is running smoothly.
 The last step of the _Getting started_ guide is to run the **Analog Plotter** example from the [Customize](https://downtothewire.io/qtpy-datalogger/customize/#analog-plotter) page.
