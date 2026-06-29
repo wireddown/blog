@@ -77,17 +77,17 @@ blockquote {
   font-style: italic;
   border-left: 0.3rem solid var(--line-color);
 }
-ul {
+ol, ul {
   margin-left: 1.75rem;
-  margin-bottom: 1.75rem;
+  margin-bottom: 1.3rem;
 }
-ol {
-  margin-left: 1.75rem;
-  margin-bottom: 1.75rem;
+ol * ol, ul * ul,
+ol * ul, ul * ol {
+  margin-left: 1.5rem;
+  margin-bottom: 0.3rem;
 }
-ol * ol,
-ul * ul {
-  margin-left: 1rem;
+ol * pre, ul * pre {
+  margin-left: 0.5rem;
   margin-bottom: 0;
 }
 li {
