@@ -29,7 +29,7 @@
   color: var(--page-bg);
 }
 
-#gpgc-new-comment .gpgc-avatar {
+#gpgc-new-comment .gpgc-avatar .gpgc-filtered-img {
   /* filters from https://codepen.io/sosuke/pen/Pjoqqp */
   filter: invert(91%) sepia(70%) saturate(6689%) hue-rotate(322deg) brightness(101%) contrast(104%);
 }

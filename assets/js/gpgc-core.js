@@ -149,6 +149,7 @@ function updateCommentFormMode(newMode, reset) {
 function updateCommenterInformation(userJson) {
   ReaderGitHubUrl.href = userJson.html_url;
   ReaderAvatarUrl.src = userJson.avatar_url;
+  ReaderAvatarUrl.classList.remove("gpgc-filtered-img")
   ReaderLogin.innerHTML = userJson.login;
 }
 
