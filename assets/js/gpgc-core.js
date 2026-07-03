@@ -190,7 +190,7 @@ function onUserAuthenticated(checkAuthenticationRequest) {
 
 function onUserAuthenticationError(checkAuthenticationRequest) {
   AccessToken = "";
-  var helpErrorMessage = "Sorry, it looks like your login failed. Please try again, or <a href='https://github.com/settings/applications'>reset</a> your <strong>ghpages-ghcomments</strong> authorization.";
+  var helpErrorMessage = "Sorry, it looks like your login failed. Please try again, or <a href='https://github.com/settings/apps/authorizations'>reset</a> your <strong>Comments for downtothewire.io</strong> authorization.";
   var isRawHtml = false;
   if (gpgc.enable_diagnostics) {
     helpErrorMessage = "<h3><strong>gpgc</strong> Error: Authentication Failed</h3><p>Could not authenticate OAuth token</p><p>GitHub response:</p><p><pre>" + checkAuthenticationRequest.responseText + "</pre></p>";
