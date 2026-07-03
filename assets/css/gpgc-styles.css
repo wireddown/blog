@@ -82,8 +82,9 @@
 }
 
 button:disabled {
-  border: solid 1px red !important;
-  background-color: red !important;
+  border: solid 1px var(--cat-bg);
+  background-color: var(--line-color);
+  color: var(--cat-bg);
 }
 
 /*
