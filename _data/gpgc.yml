@@ -3,9 +3,9 @@ repo_name: wireddown.github.io
 disabled: false
 use_show_action: true
 label_name: Post Comments
-label_color: ac4142
+label_color: fbca04
 github_application:
   client_id: Iv23lim3oT5cHmM1LdGk
   code_authenticator: https://gh-preview.vercel.app/exchange_token/
   callback_url: https://downtothewire.io/blog/assets/gpgc_redirect/index.html
-enable_diagnostics: true
+enable_diagnostics: false
