@@ -6,6 +6,6 @@ label_name: Post Comments
 label_color: ac4142
 github_application:
   client_id: Iv23lim3oT5cHmM1LdGk
-  code_authenticator: https://gh-preview-wireddown-downtothewire.vercel.app/exchange_token/
+  code_authenticator: https://gh-preview-kcprvtr1o-downtothewire.vercel.app/exchange_token/
   callback_url: https://downtothewire.io/blog/assets/gpgc_redirect/index.html
 enable_diagnostics: true
