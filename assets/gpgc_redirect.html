@@ -2,14 +2,12 @@
 ---
 
 <script>
-  var targetOrigin = "{{ site.url }}";
-  var eventData = { type: "login" };
-  var parameters = window.location.href.split("?")[1];
-  var pairs = parameters.split("&");
-  pairs.forEach(function(item) {
-    var kvp = item.split("=");
-    eventData[kvp[0]] = kvp[1];
-  });
+  const targetOrigin = "{{ site.url }}";
+  const parameters = new URLSearchParams(window.location.search);
+  const eventData = {
+    type: "login",
+    ...Object.fromEntries(params)
+  };
   window.opener.postMessage(eventData, targetOrigin);
   window.close();
 </script>
