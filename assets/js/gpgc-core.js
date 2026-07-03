@@ -541,14 +541,12 @@ function showCommentHelp(message, isRawHtml, cssClassToAdd, cssClassToRemove) {
   }
   HelpMessageDiv.classList.add(cssClassToAdd);
   HelpMessageDiv.classList.remove(cssClassToRemove);
-  showElement(HelpMessageDiv);
 }
 
 function clearCommentHelp() {
   HelpMessageDiv.innerHTML = "";
   HelpMessageDiv.classList.remove("gpgc-help-message");
   HelpMessageDiv.classList.remove("gpgc-help-error");
-  hideElement(HelpMessageDiv);
 }
 
 function showFatalError(internalMessage) {
