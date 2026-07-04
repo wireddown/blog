@@ -102,7 +102,7 @@ This seems like the intended outcome.
 
 Reading the [feature page](https://pnpm.io/feature-comparison), I learned that `pnpm` can also manage versions of Node.js.
 It's _both_ a version manager and a package manager.
-So I removed `nvm` and used `pnpm` install Node.js.
+So I removed `nvm` and used `pnpm` to install Node.js.
 
 ```powershell
 # Remove nvm's Node.js
@@ -186,6 +186,7 @@ The basic sequence was
 - Write the Vercel code that uses the app's secret to [exchange a login code for a user token](https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/generating-a-user-access-token-for-a-github-app)
 - Run the Vercel code in the production environment
   - I didn't want to follow the preview redirects or setup a reverse proxy
+  - And you either test in prod or live a lie 🌈⭐
 - Update the blog's javascript and settings to use the new authentication flow
 - Use the Vercel logs and browser console to identify bugs
 
